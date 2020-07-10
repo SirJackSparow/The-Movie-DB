@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:id="@+id/pause"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    <com.google.android.youtube.player.YouTubeThumbnailView
+        android:id="@+id/youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:padding="10dp"
+
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/playlist"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_baseline_play_circle_filled_24"
+        android:layout_height="50dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kosong"
+        android:text="Tidak ada video dimuat"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_height="match_parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
